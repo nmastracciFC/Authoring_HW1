@@ -53,5 +53,8 @@ theImages.forEach(function(image, index){
 });
 
 
+//document.querySelector('#spring').click();
+//way to call the function to work right away
+changeElements.call(document.querySelector('#spring'));
 
 })();
