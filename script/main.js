@@ -67,14 +67,24 @@ function popLightbox(currentIndex, currentObject) {
 	let lightbox = document.querySelector('.lightbox');
 	let lightboxImg = lightbox.querySelector('img');
 	let lightboxDesc = lightbox.querySelector('p');
-	let lightBoxClose = document.querySelector('.close_lightbox');
+	let lightBoxClose = document.querySelector('.close-lightbox');
 	
 	
 	lightbox.style.display = "block";
 
 	lightboxImg.src = "images/" +currentObject.images[currentIndex];
 	lightboxDesc.innerHTML = currentObject.imageDescription[currentIndex];
+
+	lightBoxClose.addEventListener('click', closeLightbox, false);
 }
+
+function closeLightbox(){
+	//reset everything and close the lgihtbox
+	debugger;
+
+}
+
+
 
 //document.querySelector('#spring').click();
 //way to call the function to work right away
