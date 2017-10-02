@@ -59,10 +59,21 @@ theImages.forEach(function(image, index){
 //trigger the lightbox
 function popLightbox(currentIndex, currentObject) {
 	// debugger;
+	//move window to the top every time we click - quick bug fix
+	window.scrollTo(0,0);
+	document.body.style.overflow = "hidden";
+
 	//trigger the lightbox overlay so that we can see it
-	let lightbox = document.querySelector(".lightbox");
+	let lightbox = document.querySelector('.lightbox');
+	let lightboxImg = lightbox.querySelector('img');
+	let lightboxDesc = lightbox.querySelector('p');
+	let lightBoxClose = document.querySelector('.close_lightbox');
+	
+	
 	lightbox.style.display = "block";
 
+	lightboxImg.src = "images/" +currentObject.images[currentIndex];
+	lightboxDesc.innerHTML = currentObject.imageDescription[currentIndex];
 }
 
 //document.querySelector('#spring').click();

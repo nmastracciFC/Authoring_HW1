@@ -7,6 +7,11 @@ var dynamicContent = {
 			images : [
 				"spring_1.jpg",
 				"spring_2.jpg"
+			],
+
+			imageDescription: [
+				"This is a bunch of butterflies",
+				"This is a ducky! or a chick"
 			]
 		},
 
@@ -18,6 +23,11 @@ var dynamicContent = {
 			images : [
 				"summer_1.jpg",
 				"summer_2.jpg"
+			],
+
+			imageDescription: [
+				"Here we have lawn chairs",
+				"This puppy is so sleepy"
 			]
 		},
 
@@ -29,6 +39,11 @@ var dynamicContent = {
 			images : [
 				"autumn_1.jpg",
 				"autumn_2.jpg"
+			],
+
+			imageDescription: [
+				"lets walk in the woods!",
+				"how do you spell abundance"
 			]
 		},
 
@@ -40,6 +55,11 @@ var dynamicContent = {
 			images : [
 				"winter_1.jpg",
 				"winter_2.jpg"
+			],
+
+			imageDescription: [
+				"Wintry woods",
+				"a snowman!"
 			]
 		}
 	};
