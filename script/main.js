@@ -5,6 +5,7 @@ var theImages = document.querySelectorAll(".image-holder"),
 	theHeading = document.querySelector(".heading"),
 	theSubhead = document.querySelector(".main-copy h2"),
 	theSeasonText = document.querySelector(".main-copy p"),
+	lbText = document.querySelector("img-desc"),
 	appliedClass;
 
 function changeElements() {
@@ -38,6 +39,7 @@ function changeElements() {
 	//remove the colours we applied on the the last click
 	theSubhead.classList.remove(appliedClass);
 	theHeading.classList.remove(appliedClass);
+	
 	//change the text using the values of the properties of the object
 	theSubhead.firstChild.nodeValue = objectIndex.headline;
 	theSeasonText.firstChild.nodeValue = objectIndex.text;
@@ -81,6 +83,9 @@ function popLightbox(currentIndex, currentObject) {
 function closeLightbox(){
 	//reset everything and close the lgihtbox
 	// debugger;
+	document.body.style.overflow = "scroll";
+	let lightbox = document.querySelector(".lightbox");
+	lightbox.style.display = "none";
 
 }
 
