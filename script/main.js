@@ -66,10 +66,10 @@ function popLightbox(currentIndex, currentObject) {
 	document.body.style.overflow = "hidden";
 
 	//trigger the lightbox overlay so that we can see it
-	let lightbox = document.querySelector('.lightbox');
-	let lightboxImg = lightbox.querySelector('img');
-	let lightboxDesc = lightbox.querySelector('p');
-	let lightBoxClose = document.querySelector('.close-lightbox');
+	let lightbox = document.querySelector(".lightbox");
+	let lightboxImg = lightbox.querySelector("img");
+	let lightboxDesc = lightbox.querySelector("p");
+	let lightBoxClose = document.querySelector(".close-lightbox");
 	
 	
 	lightbox.style.display = "block";
@@ -77,13 +77,17 @@ function popLightbox(currentIndex, currentObject) {
 	lightboxImg.src = "images/" +currentObject.images[currentIndex];
 	lightboxDesc.innerHTML = currentObject.imageDescription[currentIndex];
 
-	lightBoxClose.addEventListener('click', closeLightbox, false);
+	if (lightboxImg > 1000+"px"){
+		lightboxImg.style.width = 900+"px";
+	}
+
+	lightBoxClose.addEventListener("click", closeLightbox, false);
 }
 
 function closeLightbox(){
 	//reset everything and close the lgihtbox
 	// debugger;
-	document.body.style.overflow = "scroll";
+	document.body.style.overflow = "auto";
 	let lightbox = document.querySelector(".lightbox");
 	lightbox.style.display = "none";
 
@@ -93,6 +97,6 @@ function closeLightbox(){
 
 //document.querySelector('#spring').click();
 //way to call the function to work right away
-changeElements.call(document.querySelector('#spring'));
+changeElements.call(document.querySelector("#spring"));
 
 })();
