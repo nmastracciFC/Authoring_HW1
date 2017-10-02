@@ -30,7 +30,7 @@ function changeElements() {
 
 		newSubImg.dataset.index = index;
 		//add an event handler to trigger a lightbox 
-		newSubImg.addEventListener("click", popLightbox, false);
+		newSubImg.addEventListener("click", function(){popLightbox(index, objectIndex);}, false);
 		//add it to the page
 		subImages.appendChild(newSubImg);
 	})
@@ -57,7 +57,7 @@ theImages.forEach(function(image, index){
 });
 
 //trigger the lightbox
-function popLightbox() {
+function popLightbox(currentIndex, currentObject) {
 	// debugger;
 	//trigger the lightbox overlay so that we can see it
 	let lightbox = document.querySelector(".lightbox");
