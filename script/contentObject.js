@@ -6,12 +6,20 @@ var dynamicContent = {
 
 			images : [
 				"spring_1.jpg",
-				"spring_2.jpg"
+				"spring_2.jpg",
+				"spring_3.jpg",
+				"spring_4.jpg",
+				"spring_5.jpg",
+				"spring_6.jpg"
 			],
 
 			imageDescription: [
 				"This is a bunch of butterflies",
-				"This is a ducky! or a chick"
+				"This is a ducky! or a chick",
+				"lollipop watermelons!?",
+				"Cherry blossoms are so beautiful",
+				"Flowers blossom in the spring!",
+				"Daffy, Daffy, Dills!"
 			]
 		},
 
@@ -22,12 +30,21 @@ var dynamicContent = {
 
 			images : [
 				"summer_1.jpg",
-				"summer_2.jpg"
+				"summer_2.jpg",
+				"summer_3.jpg",
+				"summer_4.jpg",
+				"summer_5.jpg",
+				"summer_6.jpg"
 			],
 
 			imageDescription: [
 				"Here we have lawn chairs",
-				"This puppy is so sleepy"
+				"This puppy is so sleepy",
+				"There's a lot of sand in your shoes!",
+				"Bullrushes in a sunset",
+				"A little overly explicit maybe...",
+				"Beaches will never get old"
+
 			]
 		},
 
@@ -38,12 +55,20 @@ var dynamicContent = {
 
 			images : [
 				"autumn_1.jpg",
-				"autumn_2.jpg"
+				"autumn_2.jpg",
+				"autumn_3.jpg",
+				"autumn_4.jpg",
+				"autumn_5.jpg",
+				"autumn_6.jpg"
 			],
 
 			imageDescription: [
 				"lets walk in the woods!",
-				"how do you spell abundance"
+				"how do you spell abundance",
+				"A bunch of leaves",
+				"Oh look! Some Pumpkins!",
+				"ahh, a fall road",
+				"Walk in the woods"
 			]
 		},
 
@@ -54,12 +79,20 @@ var dynamicContent = {
 
 			images : [
 				"winter_1.jpg",
-				"winter_2.jpg"
+				"winter_2.jpg",
+				"winter_3.jpg",
+				"winter_4.jpg",
+				"winter_5.jpg",
+				"winter_6.jpg"
 			],
 
 			imageDescription: [
 				"Wintry woods",
-				"a snowman!"
+				"a snowman!",
+				"So lonely...",
+				"Everything covered in a blanket",
+				"Travelling down the road--so peaceful.",
+				"This horse MUST be cold"
 			]
 		}
 	};

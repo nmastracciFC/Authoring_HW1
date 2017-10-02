@@ -80,7 +80,7 @@ function popLightbox(currentIndex, currentObject) {
 
 function closeLightbox(){
 	//reset everything and close the lgihtbox
-	debugger;
+	// debugger;
 
 }
 
