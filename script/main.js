@@ -77,8 +77,8 @@ function popLightbox(currentIndex, currentObject) {
 	lightboxImg.src = "images/" +currentObject.images[currentIndex];
 	lightboxDesc.innerHTML = currentObject.imageDescription[currentIndex];
 
-	if (lightboxImg > 1000+"px"){
-		lightboxImg.style.width = 900+"px";
+	if (lightboxImg > 999+"px"){
+		lightboxImg.style.width = 700+"px";
 	}
 
 	lightBoxClose.addEventListener("click", closeLightbox, false);
