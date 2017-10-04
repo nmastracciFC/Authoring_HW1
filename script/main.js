@@ -89,6 +89,8 @@ function closeLightbox(){
 	// debugger;
 	document.body.style.overflow = "auto";
 	let lightbox = document.querySelector(".lightbox");
+	lightbox.querySelector('img').src="";
+	lightbox.querySelector("p").innerHTML = "";
 	lightbox.style.display = "none";
 
 }
